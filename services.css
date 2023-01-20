@@ -1,0 +1,206 @@
+#services{
+    min-height:25rem;
+    background:url("images/cosmetic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right,bottom;
+    isolation: isolate;
+}
+.services{
+    min-height:25rem;
+    position: relative;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+align-items:center;
+justify-content: center;
+color:black;
+font-weight: 900;
+font-size:1.3rem;
+line-height:1.6;
+}
+.services::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color:rgb(221, 216, 216);
+    z-index:-2;
+   mix-blend-mode:screen;
+   }
+.services p{
+    font-size:1.3rem;
+}
+/*hairstyle */
+.hairstyle{
+    text-align: center;
+}
+.hairstyles img{
+        object-fit: cover;
+    height:410px;
+    width:400px;
+    border:3px red solid;
+}
+.hairstyles{
+    display:flex;
+      justify-content:space-evenly;
+    gap:2rem;
+   align-items: center;
+ }
+.hairstylecontent p{
+    max-width:80ch;
+    text-align: center;
+}
+/*work */
+#working{
+       text-align: center;
+}
+.workimages1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:2rem;
+  }
+.workimage1 img{
+    height:350px;
+    width:400px;
+    border:3px red solid;
+    object-fit: cover;
+    }
+/*Makeup */
+.makeup img{
+    height:300px;
+    width:370px;
+    border:3px red solid;
+    object-fit: cover;
+}
+.makeup{
+    text-align: center;
+}
+.makeups{
+display:flex;
+justify-content: space-evenly;
+gap:2rem;
+flex-wrap:wrap;
+}
+.makeupcontent p{
+   max-width:60ch;
+   text-align: center;
+}
+/* point */
+.counter{
+    position: relative;
+}
+.counter:before{
+    position:absolute;
+    counter-increment: counter-name;
+    content:counter(counter-name);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:-1rem;
+    height:2rem;
+    width:2rem;
+    border:3px red solid;
+    border-radius:1rem;
+    }
+.points{
+    margin-top:3rem;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:2rem;
+    position: relative;
+    counter-reset: counter-name;
+}
+.point{
+    display:flex;
+    gap:2rem;
+    }
+/*wrok2 */
+#work2{
+text-align: center;
+    }
+    #work2 img{
+        height:330px;
+        width:380px;
+        border:3px red solid;
+        object-fit: cover;
+    }
+    .workimages2{
+display:flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap:2rem;
+    }
+/*work3 */
+#work3{
+text-align: center;
+}
+#work3 img{
+    height:300px;
+    width:380px;
+    border:3px red solid;
+    object-fit: cover;
+}
+.workimages3{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+.store{
+    text-align: center;
+}
+.store img{
+height:430px;
+width:400px;
+border:3px red solid;
+}
+.stores{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:2rem;
+    }
+/*Contacts */
+#contact{
+  min-height:40rem;
+}
+.contactform {
+        min-height:40rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+       }
+.contactform form {
+    min-width:70%;
+    max-width:100%;
+    height:100%;
+    max-width:1200px;
+    margin:0 auto;
+    min-height:40rem;
+    display:flex;
+    flex-direction: column;
+    outline:4px black solid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:0.5rem;
+    }
+.contactform form input{
+   width:70%;
+}
+.contactform input{
+    padding-left:1rem;
+}
+.contactform input:hover,:focus{
+      border-radius: 1rem;
+}
+@media (max-width:1200px) {
+    .hairstyles,.makeups{
+        flex-direction: column;
+        align-items: center;
+    }
+}

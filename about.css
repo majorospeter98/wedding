@@ -1,0 +1,265 @@
+#about{
+    background: url("images/aboutwedding.jpg");
+    min-height:25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:30;
+}
+.abouttext{
+    min-height: 25rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+color:black;
+font-size:1.4rem;
+}
+.abouttext::after{
+    content: '';
+position: absolute;
+inset:0;
+z-index:-3;
+background-color:rgb(209, 192, 192);
+mix-blend-mode: screen;
+}
+#aboutwel{
+    min-height: 25rem;
+    background-color: black;
+}
+.aboutwelcontent{
+    min-height: 25rem;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4rem;
+    }
+    .aboutwelcontent p{
+        max-width:700px;
+        margin:0 auto;
+        line-height:1.6;
+        text-align: center;
+    }
+
+.heritages{
+    display:flex;
+    gap:1.5rem;
+   }
+.heritage1{
+    min-height:20rem;
+    background-image:url("images/aboutwedding1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    isolation: isolate;
+    z-index:30;
+    width:100%;
+}
+.heritage1content{
+    height:520px;
+    width:600px;
+    min-height: 20rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    text-align: center;
+    position: relative;
+    color:black;
+    line-height: 1.7;
+    font-size:1.2rem;
+    width:100%;
+}
+.heritage1content p{
+    max-width: 400px;
+    margin:0 auto;
+}
+.heritage1content::after{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(207, 206, 206);
+    mix-blend-mode: screen;
+    z-index:-3;
+}
+.heritage2{
+    min-height:20rem;
+    background-image:url("images/aboutwedding2.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    isolation: isolate;
+    z-index:30;
+    width:100%;
+}
+.heritage2content{
+    height:520px;
+    width:600px;
+    min-height: 20rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    text-align: center;
+    position: relative;
+    color:black;
+    line-height: 1.7;
+    font-size:1.2rem;
+    width:100%;
+}
+.heritage2content p{
+    max-width: 400px;
+    margin:0 auto;
+}
+.heritage2content::after{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(235, 235, 235);
+    mix-blend-mode: screen;
+    z-index:-3;
+}
+#choose{
+   text-align: center;
+}
+.chooses{
+    display:flex;
+    justify-content: space-evenly;
+    gap:2rem;
+   }
+.chooses img{
+    height:90px;
+    width:80px;
+}
+.chooses p{
+  font-weight:bold;
+}
+.choose{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+         text-align: center;
+}
+.teams img{
+    height:150px;
+    width:213px;
+    border-radius:1rem;
+   object-fit: cover;
+   object-position: center;
+   border:3px red solid;
+ }
+.teams{
+display:grid;
+  grid-template-columns: repeat(4,1fr);
+justify-content: center;
+ gap:2rem;
+ font-size:1rem;
+}
+.team{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align: center;
+}
+#stylist{
+    margin-top:5rem;
+    min-height:25rem;
+    background-image:url("images/ruha.jpeg");
+    background-position: cover;
+    background-position: center center;
+    display: flex;
+    position: relative;
+    z-index:2;
+    text-align: center;
+
+}
+.intro{
+    min-height:30rem;
+    width: 100%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:1.8rem;
+}
+.intro button{
+    margin-top:3rem;
+    font-size:1.1rem;
+}
+.intro::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #9e0f0f;
+    mix-blend-mode:hard-light;
+    
+  }
+  .quotesimg img{
+     height:300px;
+     width:350px;
+  }
+  .quotes{
+      display: flex;
+      justify-content: space-evenly;
+            width:100%;
+            align-items: center;
+            gap:1rem;
+            height:100%;
+  }
+  .quotesimg{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+      }
+  .quotescontent{
+    min-height:300px;
+    height:100%;
+     width:100%;
+      background-color: rgb(240, 239, 239);
+      opacity: 0.9;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:2rem;
+      
+  }
+  .afterquote {
+    max-width:40ch;
+    text-align: center;
+  }
+  .afterquote::before{
+    content: open-quote;
+    font-size:2rem;
+    color:var(--main-color);
+      
+  }
+  .afterquote::after{
+    content: close-quote;
+    font-size:2rem;
+    color:var(--main-color);
+      
+  }
+  
+ @media (max-width:1200px) {
+    .heritages,.quotes{
+        flex-direction:column;
+        justify-content: center;
+        }
+        .chooses{
+            flex-wrap:wrap;
+        }
+        .teams{
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width:600px){
+.teams{
+    grid-template-columns: 1fr;
+}
+        }
+  }
